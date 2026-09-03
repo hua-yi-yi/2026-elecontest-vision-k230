@@ -1,0 +1,10 @@
+.superpowers/
+__pycache__/
+*.py[cod]
+
+# 上传排除:主项目内的旧重复快照与训练中间产物
+k230-steel-ball-detector-main/
+runs/
+training/runs/
+tmp/
+gmodel_dump_dir/

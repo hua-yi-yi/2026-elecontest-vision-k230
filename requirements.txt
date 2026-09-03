@@ -1,0 +1,5 @@
+ultralytics>=8.4.107
+torch
+onnx>=1.16
+onnxsim
+polars>=1.0

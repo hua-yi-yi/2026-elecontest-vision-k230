@@ -1,0 +1,32 @@
+{
+  "source": "/mnt/c/Users/31806/OneDrive/Desktop/k230\u94a2\u73e0/k230-steel-ball-detector-main/training/data/dataset_70816_merged",
+  "output_size": [
+    416,
+    416
+  ],
+  "resize": "direct bilinear stretch matching K230 AI2D preprocess",
+  "labels": "normalized YOLO coordinates unchanged by axis-wise stretch",
+  "stats": {
+    "train": {
+      "images": 361,
+      "source_sizes": {
+        "512x288": 359,
+        "881x524": 1,
+        "880x530": 1
+      }
+    },
+    "val": {
+      "images": 55,
+      "source_sizes": {
+        "512x288": 55
+      }
+    },
+    "test": {
+      "images": 56,
+      "source_sizes": {
+        "512x288": 56
+      }
+    }
+  },
+  "test_images_used_for_training": false
+}

@@ -1,0 +1,67 @@
+{
+  "dataset": {
+    "source": "C:\\Users\\31806\\Downloads\\dataset_70596.zip",
+    "source_sha256": "bf7be2d41c775a2dad86a431131378d8382ede9de395d488edf395a9d4f84659",
+    "images": 100,
+    "image_size": [512, 288],
+    "classes": ["steel_ball"],
+    "splits": {
+      "train": 75,
+      "val": 15,
+      "test": 10
+    },
+    "box_fixes": [
+      {
+        "image": "39327665.jpg",
+        "original": [-1.0, 160.0, 8.0, 186.0],
+        "clipped": [0.0, 160.0, 8.0, 186.0]
+      }
+    ]
+  },
+  "environment": {
+    "ultralytics": "8.4.107",
+    "torch": "2.11.0+cu128",
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU"
+  },
+  "training": {
+    "initial_weights": "models/steel_ball_yolo26n_epoch19_best.pt",
+    "initial_weights_sha256": "18e2360901315f745ec3e99092d841a8ffadd29c54191130727fc5a88c147bb9",
+    "imgsz": 1024,
+    "batch": 4,
+    "maximum_epochs": 60,
+    "completed_epochs": 28,
+    "best_epoch": 21,
+    "stop_reason": "goal metrics reached, then fitness plateaued for 7 epochs",
+    "optimizer": "AdamW",
+    "lr0": 0.001,
+    "lrf": 0.01,
+    "seed": 20260727,
+    "best_weights": "training/runs/detect/dataset_70596_yolo26n_1024/weights/best.pt",
+    "best_weights_sha256": "a72e84bd25c35c73f180a15e707226b8e68377eed50e051de316a8135e4a1c8d"
+  },
+  "validation": {
+    "precision": 0.99442,
+    "recall": 1.0,
+    "map50": 0.995,
+    "map50_95": 0.68684
+  },
+  "held_out_test": {
+    "baseline": {
+      "precision": 0.4638466895,
+      "recall": 0.3,
+      "map50": 0.2184977434,
+      "map50_95": 0.1332381167
+    },
+    "trained": {
+      "precision": 1.0,
+      "recall": 0.9883541321,
+      "map50": 0.995,
+      "map50_95": 0.6533888889
+    }
+  },
+  "limitations": [
+    "The dataset contains only 100 images and one object per image.",
+    "Images have highly similar backgrounds and the object stays near the same horizontal line.",
+    "Held-out metrics measure performance within this scene and do not establish cross-scene generalization."
+  ]
+}

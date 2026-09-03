@@ -1,0 +1,78 @@
+{
+  "model": {
+    "weights": "training/runs/detect/dataset_70596_yolo26n_416_hardneg_lr1e4/weights/best.pt",
+    "onnx": "models/steel_ball_dataset_70596_yolo26n_416_hardneg.onnx",
+    "kmodel": "models/steel_ball_dataset_70596_yolo26n_416_hardneg_i16w8.kmodel",
+    "architecture": "YOLO26n end-to-end",
+    "input": "uint8 [1,3,416,416]",
+    "output": "float32 [1,300,6]",
+    "output_rows": "[x1,y1,x2,y2,confidence,class_id]",
+    "kmodel_sha256": "6bf6b6dda35eedb745fdb9ce10227393a0e35e21220d9ee16d7f51cf0a73ab76",
+    "kmodel_bytes": 3259600
+  },
+  "conversion": {
+    "nncase": "2.11.0",
+    "target": "k230",
+    "activation_quant_type": "int16",
+    "weight_quant_type": "uint8",
+    "calibration_samples": 92,
+    "calibration_sources": {
+      "train": 77,
+      "val": 15,
+      "hard_negatives": 2,
+      "test_images_included": false
+    },
+    "preprocess": {
+      "input_type": "uint8",
+      "input_range": [0, 255],
+      "mean": [0, 0, 0],
+      "std": [255, 255, 255],
+      "input_layout": "NCHW",
+      "swapRB": false
+    }
+  },
+  "validation": {
+    "held_out_test_images": 10,
+    "confidence_threshold": 0.15,
+    "ground_truth_iou": 0.50,
+    "kmodel_true_positives": 10,
+    "kmodel_false_positives": 3,
+    "kmodel_false_negatives": 0,
+    "display_threshold": {
+      "confidence": 0.30,
+      "true_positives": 10,
+      "false_negatives": 0,
+      "false_positives": 1
+    },
+    "onnx_kmodel_coordinate_comparison": "main matched boxes IoU >= 0.939",
+    "negative_samples": {
+      "dark_scene": {
+        "max_score": -0.0039558411,
+        "detections_at_015": 0,
+        "detections_at_030": 0
+      },
+      "perforated_panel_raw": {
+        "max_score": 0.5927734375,
+        "detections_at_015": 10,
+        "detections_at_030": 8,
+        "handling": "new CanMV entry applies MIN_BOX_SIDE=12 after camera-coordinate scaling; these candidates are below 9 pixels"
+      }
+    },
+    "reports": [
+      "docs/dataset_70596_kmodel_validation_hardneg.json",
+      "docs/dataset_70596_kmodel_validation_hardneg_conf030.json"
+    ]
+  },
+  "deployment": {
+    "model_on_sdcard": "/sdcard/models/steel_ball_dataset_70596_yolo26n_416_hardneg_i16w8.kmodel",
+    "script": "canmv/steel_ball_dataset_70596_yolo26_uart.py",
+    "confidence_threshold": 0.15,
+    "display_confidence_threshold": 0.30,
+    "min_box_side": 12
+  },
+  "sha256": {
+    "weights": "ec526ce28e06c3c5055ff396b0766e5a23798757c0211a560f342be412a66a00",
+    "onnx": "d2b9ea62a9cc65b8e934aa31b29261b6dae1ab0156f414dc8e3044744398f421",
+    "kmodel": "6bf6b6dda35eedb745fdb9ce10227393a0e35e21220d9ee16d7f51cf0a73ab76"
+  }
+}

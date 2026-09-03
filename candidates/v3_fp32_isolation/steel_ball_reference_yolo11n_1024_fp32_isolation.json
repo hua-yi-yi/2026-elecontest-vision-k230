@@ -1,0 +1,13 @@
+{
+  "model": "D:\\work\\MATCH\\control-car\\k230\\\u94a2\u73e0\u8bc6\u522b\\models\\export\\steel_ball_reference_yolo11n_1024_legacy.onnx",
+  "output": "D:\\work\\MATCH\\control-car\\k230\\\u94a2\u73e0\u8bc6\u522b\\models\\export\\steel_ball_reference_yolo11n_1024_fp32_isolation.kmodel",
+  "target": "k230",
+  "input_shape": [
+    1,
+    3,
+    1024,
+    1024
+  ],
+  "bytes": 10607160,
+  "sha256": "bae8fa43022622c3720817d47cfca7e979056972a097b47904f2867a82107f24"
+}

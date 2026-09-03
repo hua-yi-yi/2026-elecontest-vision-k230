@@ -1,0 +1,67 @@
+K230 离线部署包（插电即用，无屏幕版）
+====================================
+
+原理（依据嘉楠官方 CanMV K230 文档 zh/userguide/how_to_use_ide.md）：
+    脚本保存为 /sdcard/main.py 后，CanMV 启动时会自动运行，无需电脑、无需 CanMV IDE。
+
+本包使用迭代后的 dataset_70816 召回优化模型
+（steel_ball_dataset_70816_yolo26n_416_stretched_recall_i16w8.kmodel，
+独立测试集 conf=0.20 时 TP=56、FN=0、FP=5，详见 docs/dataset_70816_training_report.json）。
+
+一、TF 卡文件布局
+-----------------
+复制本目录下两个文件到 TF 卡（FAT32）：
+
+    main.py                                    ->  /sdcard/main.py
+    models/steel_ball_dataset_70816_yolo26n_416_stretched_recall_i16w8.kmodel
+                                               ->  /sdcard/models/steel_ball_dataset_70816_yolo26n_416_stretched_recall_i16w8.kmodel
+
+二、接线（UART1，与板端脚本一致）
+--------------------------------
+    K230 UART1 TX (GPIO9)   ->  MSPM0 云台 RX
+    K230 UART1 RX (GPIO10)  ->  MSPM0 云台 TX（可选）
+    GND 与 MSPM0 共地
+    115200, 8N1, 3.3V TTL
+
+三、插电后的行为
+---------------
+    1. 自动加载模型并开始检测。无屏幕：display_mode="virt"（虚拟显示，
+       不上屏，不依赖 IDE，不影响检测与串口）。
+    2. 每帧向 UART1 发送一次 8 字节二进制帧：
+           AA 55 Xh Xl Yh Yl 0D 0A       有稳定目标（只发最高分那颗），
+                                          坐标为 512x288 画面的像素坐标（X:0..511, Y:0..287）
+           AA 55 FF FE FF FE 0D 0A       无稳定目标（丢失帧标记）
+    3. 检测参数：原始阈值 0.20、显示阈值 0.20、两帧确认、最小边长 8 像素。
+       常速度卡尔曼跟踪：预测中心参与匹配，已确认目标最多维持 4 帧，
+       coast 期间不输出坐标（无匹配帧即发 0xFFFE 丢失帧）。
+    4. 程序崩溃后 5 秒自动重启，长时间无人值守也不会停死。
+
+四、验证
+-------
+    首次正常启动的日志（USB 串口 / 重新连接 CanMV IDE 可查看）依次出现：
+        AUTORUN STARTED, restart delay 5s
+        STEEL-BALL-DATASET-70816-STRETCHED-416-I16W8-KALMAN-V2-OFFLINE
+        stage=PIPELINE_READY display=...
+        stage=MODEL_READY contract=[1,300,6]
+        stage=UART_READY gpio9=tx gpio10=rx baud=115200 protocol=AA55-X-Y-0D0A
+        stage=KPU_RUN_BEGIN
+        stage=KPU_RUN_END
+        stage=KPU_OUTPUT shape=(1, 300, 6)
+        stage=FIRST_FRAME_READY ...
+
+    注意：
+    - 输出形状必须是 (1, 300, 6)，否则模型与脚本不匹配，停止使用。
+    - 没有 KPU_RUN_END 说明是运行时兼容问题，不是识别率问题。
+    - 串口接收端应能收到 AA 55 ... 0D 0A 帧；有球时坐标随目标移动。
+
+五、换回调试模式
+---------------
+    用 CanMV IDE 连接时，IDE 的"停止"会让 main.py 退出（AUTORUN STOPPED BY IDE）。
+    若需临时禁用开机自启，把 /sdcard/main.py 改名（如 main.bak）后重启即可。
+
+六、与仓库源码的关系
+-------------------
+    offline/main.py = canmv/steel_ball_yolo26_uart_epoch19.py（更新版，含卡尔曼）
+                    + canmv/steel_ball_dataset_70816_yolo26_uart.py 的参数覆盖
+                    + 离线化（自重启循环）。
+    修改共享脚本后，可重新合并生成本文件，保持离线包与仓库一致。

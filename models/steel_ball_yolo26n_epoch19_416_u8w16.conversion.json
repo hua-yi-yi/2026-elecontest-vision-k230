@@ -1,0 +1,33 @@
+{
+  "model": "D:\\work\\MATCH\\control-car\\k230\\\u94a2\u73e0\u8bc6\u522b\\models\\export\\yolo26_interim_epoch19\\steel_ball_yolo26n_epoch19_416.onnx",
+  "output": "D:\\work\\MATCH\\control-car\\k230\\\u94a2\u73e0\u8bc6\u522b\\models\\export\\yolo26_interim_epoch19\\steel_ball_yolo26n_epoch19_416_u8w16.kmodel",
+  "target": "k230",
+  "ptq_option": "1",
+  "calibration_samples": 103,
+  "compile_settings": {
+    "input_shape": [
+      1,
+      3,
+      416,
+      416
+    ],
+    "input_type": "uint8",
+    "input_range": [
+      0,
+      255
+    ],
+    "mean": [
+      0,
+      0,
+      0
+    ],
+    "std": [
+      255,
+      255,
+      255
+    ],
+    "input_layout": "NCHW"
+  },
+  "bytes": 5542696,
+  "sha256": "1079b7e56ec248d3836a211a64bee2ade833e774b86f4c4e7685538f87ea25a9"
+}

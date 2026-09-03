@@ -1,0 +1,7 @@
+path: /mnt/c/Users/31806/OneDrive/Desktop/k230钢珠/k230-steel-ball-detector-main/training/data/dataset_70816_merged
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: steel_ball

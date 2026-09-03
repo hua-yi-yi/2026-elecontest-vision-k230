@@ -1,0 +1,51 @@
+{
+  "sources": {
+    "dataset_70596": {
+      "archive": "/mnt/c/Users/31806/Downloads/dataset_70596.zip",
+      "sha256": "bf7be2d41c775a2dad86a431131378d8382ede9de395d488edf395a9d4f84659",
+      "images": 100,
+      "objects": 100
+    },
+    "dataset_70816": {
+      "archive": "/mnt/c/Users/31806/Downloads/dataset_70816.zip",
+      "sha256": "adb3d59ccbdbb2855e8d57a88391eb87ee9d1d3c12fd2e4482f0d74542a00c2e",
+      "images": 370,
+      "objects": 370
+    }
+  },
+  "split_method": "all dataset_70596 positives train; dataset_70816 sorted capture order 70% train, 15% val, 15% test; test excluded from training and PTQ",
+  "stats": {
+    "train": 361,
+    "val": 55,
+    "test": 56
+  },
+  "classes": {
+    "0": "steel_ball"
+  },
+  "source_classes": [
+    "gangqiu",
+    "gangzhu"
+  ],
+  "box_fixes": [
+    {
+      "source": "dataset_70596",
+      "image": "39327665.jpg",
+      "original": [
+        -1.0,
+        160.0,
+        8.0,
+        186.0
+      ],
+      "clipped": [
+        0.0,
+        160.0,
+        8.0,
+        186.0
+      ]
+    }
+  ],
+  "hard_negatives": [
+    "k230_dark_scene_negative.png",
+    "k230_perforated_panel_negative.png"
+  ]
+}

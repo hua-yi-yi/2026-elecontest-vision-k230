@@ -1,0 +1,265 @@
+{
+  "onnx": "models/steel_ball_yolo26n_epoch19_416.onnx",
+  "kmodel": "models/steel_ball_yolo26n_epoch19_416_fp32.kmodel",
+  "input_shape": [
+    1,
+    3,
+    416,
+    416
+  ],
+  "output_shape": [
+    1,
+    300,
+    6
+  ],
+  "confidence": 0.3,
+  "minimum_iou": 0.98,
+  "passed": true,
+  "results": [
+    {
+      "image": "ball_0002.jpg",
+      "onnx_detections": 14,
+      "kmodel_detections": 14,
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9983206760874164,
+          "score_error": 0.0002936720848083496,
+          "max_coordinate_error": 0.01006317138671875
+        },
+        {
+          "iou": 0.9976132066836221,
+          "score_error": 0.000601351261138916,
+          "max_coordinate_error": 0.0157012939453125
+        },
+        {
+          "iou": 0.9940549969765516,
+          "score_error": 0.0006163716316223145,
+          "max_coordinate_error": 0.0406494140625
+        },
+        {
+          "iou": 0.995286406561661,
+          "score_error": 0.0010509490966796875,
+          "max_coordinate_error": 0.037384033203125
+        },
+        {
+          "iou": 0.9934843472301477,
+          "score_error": 0.0007991790771484375,
+          "max_coordinate_error": 0.053741455078125
+        },
+        {
+          "iou": 0.9948444842430416,
+          "score_error": 0.0001614093780517578,
+          "max_coordinate_error": 0.04656982421875
+        },
+        {
+          "iou": 0.9961063570085731,
+          "score_error": 0.0006788969039916992,
+          "max_coordinate_error": 0.033050537109375
+        },
+        {
+          "iou": 0.9936094561722923,
+          "score_error": 0.0015361905097961426,
+          "max_coordinate_error": 0.0526275634765625
+        },
+        {
+          "iou": 0.9974537372889319,
+          "score_error": 0.0009069442749023438,
+          "max_coordinate_error": 0.015228271484375
+        },
+        {
+          "iou": 0.996032823367384,
+          "score_error": 0.007495701313018799,
+          "max_coordinate_error": 0.0245361328125
+        },
+        {
+          "iou": 0.9964964755179114,
+          "score_error": 0.002624690532684326,
+          "max_coordinate_error": 0.0285797119140625
+        },
+        {
+          "iou": 0.9934530563863576,
+          "score_error": 0.00014215707778930664,
+          "max_coordinate_error": 0.051788330078125
+        },
+        {
+          "iou": 0.9960916710017738,
+          "score_error": 0.006942808628082275,
+          "max_coordinate_error": 0.01971435546875
+        },
+        {
+          "iou": 0.9962276985990615,
+          "score_error": 0.03028246760368347,
+          "max_coordinate_error": 0.021942138671875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "ball_0003.jpg",
+      "onnx_detections": 13,
+      "kmodel_detections": 13,
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9928837436943079,
+          "score_error": 0.00046896934509277344,
+          "max_coordinate_error": 0.05730438232421875
+        },
+        {
+          "iou": 0.9950243921201297,
+          "score_error": 0.0014327764511108398,
+          "max_coordinate_error": 0.0302276611328125
+        },
+        {
+          "iou": 0.9927128200030199,
+          "score_error": 0.0014928579330444336,
+          "max_coordinate_error": 0.0630340576171875
+        },
+        {
+          "iou": 0.9891608567315475,
+          "score_error": 0.001998007297515869,
+          "max_coordinate_error": 0.0997314453125
+        },
+        {
+          "iou": 0.996474011385447,
+          "score_error": 0.0016638636589050293,
+          "max_coordinate_error": 0.0267791748046875
+        },
+        {
+          "iou": 0.9937984837243463,
+          "score_error": 0.0009301304817199707,
+          "max_coordinate_error": 0.049346923828125
+        },
+        {
+          "iou": 0.9921874375254374,
+          "score_error": 0.0008429288864135742,
+          "max_coordinate_error": 0.06640625
+        },
+        {
+          "iou": 0.9987404160535509,
+          "score_error": 0.0006513595581054688,
+          "max_coordinate_error": 0.00628662109375
+        },
+        {
+          "iou": 0.9949531839781104,
+          "score_error": 0.0006313323974609375,
+          "max_coordinate_error": 0.050506591796875
+        },
+        {
+          "iou": 0.9945714313204195,
+          "score_error": 0.003596186637878418,
+          "max_coordinate_error": 0.03314208984375
+        },
+        {
+          "iou": 0.9941816337427255,
+          "score_error": 0.0024602413177490234,
+          "max_coordinate_error": 0.0597076416015625
+        },
+        {
+          "iou": 0.9951535881332924,
+          "score_error": 0.001622021198272705,
+          "max_coordinate_error": 0.035064697265625
+        },
+        {
+          "iou": 0.9972761451646195,
+          "score_error": 0.0008257031440734863,
+          "max_coordinate_error": 0.023345947265625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "ball_0004.jpg",
+      "onnx_detections": 16,
+      "kmodel_detections": 16,
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.998463363236221,
+          "score_error": 0.00023245811462402344,
+          "max_coordinate_error": 0.0128021240234375
+        },
+        {
+          "iou": 0.9947461384958229,
+          "score_error": 0.0006020665168762207,
+          "max_coordinate_error": 0.0371246337890625
+        },
+        {
+          "iou": 0.998235905399795,
+          "score_error": 0.00017660856246948242,
+          "max_coordinate_error": 0.01116943359375
+        },
+        {
+          "iou": 0.9991285064664284,
+          "score_error": 0.00046318769454956055,
+          "max_coordinate_error": 0.00537109375
+        },
+        {
+          "iou": 0.9991577138085257,
+          "score_error": 0.00014954805374145508,
+          "max_coordinate_error": 0.0072784423828125
+        },
+        {
+          "iou": 0.9984301273903105,
+          "score_error": 0.0025635361671447754,
+          "max_coordinate_error": 0.011077880859375
+        },
+        {
+          "iou": 0.9979625160264565,
+          "score_error": 0.0002646446228027344,
+          "max_coordinate_error": 0.0203704833984375
+        },
+        {
+          "iou": 0.993695167471229,
+          "score_error": 0.014436304569244385,
+          "max_coordinate_error": 0.0583648681640625
+        },
+        {
+          "iou": 0.9959182703929349,
+          "score_error": 0.0011980533599853516,
+          "max_coordinate_error": 0.0382080078125
+        },
+        {
+          "iou": 0.9950760769239997,
+          "score_error": 9.894371032714844e-05,
+          "max_coordinate_error": 0.0496063232421875
+        },
+        {
+          "iou": 0.998974176911648,
+          "score_error": 3.2782554626464844e-05,
+          "max_coordinate_error": 0.008087158203125
+        },
+        {
+          "iou": 0.995435450070507,
+          "score_error": 0.0031870007514953613,
+          "max_coordinate_error": 0.04168701171875
+        },
+        {
+          "iou": 0.9987172403879647,
+          "score_error": 0.003832697868347168,
+          "max_coordinate_error": 0.010467529296875
+        },
+        {
+          "iou": 0.9959863595799117,
+          "score_error": 0.007100403308868408,
+          "max_coordinate_error": 0.0407562255859375
+        },
+        {
+          "iou": 0.9975629164826817,
+          "score_error": 0.00972968339920044,
+          "max_coordinate_error": 0.020782470703125
+        },
+        {
+          "iou": 0.9945829704646055,
+          "score_error": 0.048564404249191284,
+          "max_coordinate_error": 0.05364990234375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "source": "/mnt/c/Users/31806/Downloads/dataset_70596.zip",
+  "source_sha256": "bf7be2d41c775a2dad86a431131378d8382ede9de395d488edf395a9d4f84659",
+  "split_method": "sha256('real/' + filename) modulo 100; train <70, val <85, test otherwise",
+  "stats": {
+    "train": 77,
+    "val": 15,
+    "test": 10
+  },
+  "classes": {
+    "0": "steel_ball"
+  },
+  "box_fixes": [
+    {
+      "image": "39327665.jpg",
+      "original": [
+        -1.0,
+        160.0,
+        8.0,
+        186.0
+      ],
+      "clipped": [
+        0.0,
+        160.0,
+        8.0,
+        186.0
+      ]
+    }
+  ],
+  "hard_negatives": [
+    "k230_dark_scene_negative.png",
+    "k230_perforated_panel_negative.png"
+  ]
+}

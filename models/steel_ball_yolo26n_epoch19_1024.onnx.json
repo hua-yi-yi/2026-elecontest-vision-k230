@@ -1,0 +1,36 @@
+{
+  "weights": "D:\\work\\MATCH\\control-car\\k230\\\u94a2\u73e0\u8bc6\u522b\\models\\export\\yolo26_interim_epoch19_1024\\steel_ball_yolo26n_epoch19_best.pt",
+  "onnx": "D:\\work\\MATCH\\control-car\\k230\\\u94a2\u73e0\u8bc6\u522b\\models\\export\\yolo26_interim_epoch19_1024\\steel_ball_yolo26n_epoch19_1024.onnx",
+  "input_size": [
+    1024,
+    1024
+  ],
+  "raw_uint8_input": false,
+  "opsets": [
+    {
+      "domain": "",
+      "version": 13
+    }
+  ],
+  "inputs": [
+    {
+      "name": "images",
+      "shape": [
+        1,
+        3,
+        1024,
+        1024
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output0",
+      "shape": [
+        1,
+        300,
+        6
+      ]
+    }
+  ]
+}

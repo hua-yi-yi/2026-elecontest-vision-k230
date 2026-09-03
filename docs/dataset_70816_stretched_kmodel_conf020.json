@@ -1,0 +1,1566 @@
+{
+  "onnx": "models/steel_ball_dataset_70816_yolo26n_416_stretched_recall.onnx",
+  "kmodel": "models/steel_ball_dataset_70816_yolo26n_416_stretched_recall_i16w8.kmodel",
+  "input_shape": [
+    1,
+    3,
+    416,
+    416
+  ],
+  "output_shape": [
+    1,
+    300,
+    6
+  ],
+  "confidence": 0.2,
+  "minimum_iou": 0.5,
+  "ground_truth_iou": 0.5,
+  "passed": true,
+  "tensor_comparison_passed": false,
+  "ground_truth_totals": {
+    "onnx": {
+      "true_positives": 56,
+      "false_positives": 5,
+      "false_negatives": 0
+    },
+    "kmodel": {
+      "true_positives": 56,
+      "false_positives": 5,
+      "false_negatives": 0
+    }
+  },
+  "results": [
+    {
+      "image": "dataset_70816_39409751.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9902237366406207,
+          "score_error": 0.025214076042175293,
+          "max_coordinate_error": 0.166961669921875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409752.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9768973302147407,
+          "score_error": 0.008652925491333008,
+          "max_coordinate_error": 0.4559326171875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409753.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9843279609946066,
+          "score_error": 0.004482924938201904,
+          "max_coordinate_error": 0.4300537109375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409756.jpg",
+      "onnx_detections": 2,
+      "kmodel_detections": 2,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9874675942996751,
+          "score_error": 0.04751408100128174,
+          "max_coordinate_error": 0.13165283203125
+        },
+        {
+          "iou": 0.9850426795213555,
+          "score_error": 0.023859471082687378,
+          "max_coordinate_error": 0.4256591796875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409757.jpg",
+      "onnx_detections": 2,
+      "kmodel_detections": 2,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9891302819214782,
+          "score_error": 0.07550299167633057,
+          "max_coordinate_error": 0.1344451904296875
+        },
+        {
+          "iou": 0.9824003831923313,
+          "score_error": 0.04918515682220459,
+          "max_coordinate_error": 0.3315887451171875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409758.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.97742740500871,
+          "score_error": 0.005520343780517578,
+          "max_coordinate_error": 0.206878662109375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409759.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9813797696785211,
+          "score_error": 0.00790107250213623,
+          "max_coordinate_error": 0.1934814453125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409760.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9895357464297199,
+          "score_error": 0.03039097785949707,
+          "max_coordinate_error": 0.1116943359375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409761.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9853467214991741,
+          "score_error": 0.00029337406158447266,
+          "max_coordinate_error": 0.2747955322265625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409762.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9786030162511333,
+          "score_error": 0.01524960994720459,
+          "max_coordinate_error": 0.380157470703125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409763.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9874716603261525,
+          "score_error": 0.013357996940612793,
+          "max_coordinate_error": 0.1035919189453125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409764.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9866780886138977,
+          "score_error": 0.013535737991333008,
+          "max_coordinate_error": 0.2468414306640625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409765.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9881779952238271,
+          "score_error": 0.006297707557678223,
+          "max_coordinate_error": 0.132415771484375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409766.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9790364100198103,
+          "score_error": 0.009221255779266357,
+          "max_coordinate_error": 0.2431488037109375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409768.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9912213915831013,
+          "score_error": 0.03633275628089905,
+          "max_coordinate_error": 0.195556640625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409769.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9868466116894532,
+          "score_error": 0.007135748863220215,
+          "max_coordinate_error": 0.10467529296875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409770.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9853518456665618,
+          "score_error": 0.018979310989379883,
+          "max_coordinate_error": 0.183258056640625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409771.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9846056374913764,
+          "score_error": 0.004839479923248291,
+          "max_coordinate_error": 0.411376953125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409772.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9879923998265844,
+          "score_error": 0.014373421669006348,
+          "max_coordinate_error": 0.2446136474609375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409773.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9923641668238506,
+          "score_error": 0.029812157154083252,
+          "max_coordinate_error": 0.1043701171875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409774.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 2,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "passed": false,
+      "matches": [
+        {
+          "iou": 0.9836088733850281,
+          "score_error": 0.15321677923202515,
+          "max_coordinate_error": 0.316864013671875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 1
+    },
+    {
+      "image": "dataset_70816_39409775.jpg",
+      "onnx_detections": 2,
+      "kmodel_detections": 2,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9911917308070844,
+          "score_error": 0.014441192150115967,
+          "max_coordinate_error": 0.141632080078125
+        },
+        {
+          "iou": 0.9826836762308089,
+          "score_error": 0.032480478286743164,
+          "max_coordinate_error": 0.32830810546875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409776.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9830747950681235,
+          "score_error": 0.00755232572555542,
+          "max_coordinate_error": 0.310760498046875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409777.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9812401977882436,
+          "score_error": 0.00529170036315918,
+          "max_coordinate_error": 0.245697021484375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409778.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9800627831301786,
+          "score_error": 0.029909491539001465,
+          "max_coordinate_error": 0.29962158203125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409779.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9871443094546246,
+          "score_error": 0.013739347457885742,
+          "max_coordinate_error": 0.1929779052734375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409780.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9831692696780231,
+          "score_error": 0.015037178993225098,
+          "max_coordinate_error": 0.188018798828125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409781.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9851614271199999,
+          "score_error": 0.02187180519104004,
+          "max_coordinate_error": 0.2522125244140625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409783.jpg",
+      "onnx_detections": 2,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": false,
+      "matches": [
+        {
+          "iou": 0.9871628171080136,
+          "score_error": 0.0038484930992126465,
+          "max_coordinate_error": 0.1962127685546875
+        }
+      ],
+      "unmatched_reference": 1,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409784.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9771080961960753,
+          "score_error": 0.011362075805664062,
+          "max_coordinate_error": 0.40191650390625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409785.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9884242940531447,
+          "score_error": 0.012094676494598389,
+          "max_coordinate_error": 0.228790283203125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409786.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9776261651140911,
+          "score_error": 0.026207804679870605,
+          "max_coordinate_error": 0.3028411865234375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409787.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9880178816512213,
+          "score_error": 0.014412343502044678,
+          "max_coordinate_error": 0.1376190185546875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409788.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9881565543591504,
+          "score_error": 0.020774364471435547,
+          "max_coordinate_error": 0.277618408203125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409789.jpg",
+      "onnx_detections": 2,
+      "kmodel_detections": 2,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9865841393995123,
+          "score_error": 0.1032952070236206,
+          "max_coordinate_error": 0.1228179931640625
+        },
+        {
+          "iou": 0.9768489000763828,
+          "score_error": 0.01400071382522583,
+          "max_coordinate_error": 0.23388671875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409790.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9798031650949344,
+          "score_error": 0.002273857593536377,
+          "max_coordinate_error": 0.2869873046875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409791.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.986387950865701,
+          "score_error": 0.01200878620147705,
+          "max_coordinate_error": 0.23223876953125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409792.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9888811496327994,
+          "score_error": 0.009731709957122803,
+          "max_coordinate_error": 0.1212158203125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409793.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9837097851143091,
+          "score_error": 0.01850372552871704,
+          "max_coordinate_error": 0.257904052734375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409794.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9882526979108411,
+          "score_error": 0.01611095666885376,
+          "max_coordinate_error": 0.23895263671875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409795.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9918655274307134,
+          "score_error": 0.14584285020828247,
+          "max_coordinate_error": 0.0829010009765625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409796.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9832787350870331,
+          "score_error": 0.004144906997680664,
+          "max_coordinate_error": 0.2967071533203125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409797.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9840541268737708,
+          "score_error": 0.03195422887802124,
+          "max_coordinate_error": 0.25311279296875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409798.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9833602839822805,
+          "score_error": 0.013418376445770264,
+          "max_coordinate_error": 0.31689453125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409799.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9940765973470812,
+          "score_error": 0.010213017463684082,
+          "max_coordinate_error": 0.0606842041015625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409800.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9876455913568546,
+          "score_error": 0.010239660739898682,
+          "max_coordinate_error": 0.14208984375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409801.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9786790564703622,
+          "score_error": 0.01982748508453369,
+          "max_coordinate_error": 0.313629150390625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409802.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.985445305496946,
+          "score_error": 0.01647472381591797,
+          "max_coordinate_error": 0.2669677734375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409803.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9838033318807021,
+          "score_error": 0.01648855209350586,
+          "max_coordinate_error": 0.326171875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409804.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9943654446882626,
+          "score_error": 0.007552742958068848,
+          "max_coordinate_error": 0.065521240234375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409805.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9937486149923472,
+          "score_error": 0.012460291385650635,
+          "max_coordinate_error": 0.091217041015625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409806.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9872463841151005,
+          "score_error": 0.009464800357818604,
+          "max_coordinate_error": 0.0969696044921875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409807.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9956474960756119,
+          "score_error": 0.012390613555908203,
+          "max_coordinate_error": 0.051300048828125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409808.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9845278099416209,
+          "score_error": 0.022583961486816406,
+          "max_coordinate_error": 0.307098388671875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409809.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9863844734926418,
+          "score_error": 0.02018427848815918,
+          "max_coordinate_error": 0.163421630859375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "dataset_70816_39409810.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9804390137536771,
+          "score_error": 0.012034773826599121,
+          "max_coordinate_error": 0.223663330078125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    }
+  ]
+}

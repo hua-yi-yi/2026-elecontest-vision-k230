@@ -1,0 +1,88 @@
+{
+  "dataset": {
+    "new_archive": "C:\\Users\\31806\\Downloads\\dataset_70816.zip",
+    "new_archive_sha256": "adb3d59ccbdbb2855e8d57a88391eb87ee9d1d3c12fd2e4482f0d74542a00c2e",
+    "old_archive_sha256": "bf7be2d41c775a2dad86a431131378d8382ede9de395d488edf395a9d4f84659",
+    "positive_images": 470,
+    "hard_negative_images": 2,
+    "splits": {
+      "train": 361,
+      "val": 55,
+      "test": 56
+    },
+    "split_policy": "dataset_70596 positives train only; sorted dataset_70816 capture sequence split 70/15/15; test excluded from training and PTQ",
+    "source_image_size": [512, 288],
+    "training_image_size": [416, 416],
+    "resize_policy": "physical bilinear stretch to match K230 AI2D direct resize"
+  },
+  "environment": {
+    "python": "3.10.20",
+    "torch": "2.11.0+cu128",
+    "ultralytics": "8.4.107",
+    "nncase": "2.11.0",
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU"
+  },
+  "baseline": {
+    "weights": "training/runs/detect/dataset_70596_yolo26n_416_hardneg_lr1e4/weights/best.pt",
+    "test_confidence": 0.15,
+    "precision": 0.9755967017,
+    "recall": 0.9107142857,
+    "map50": 0.9743851215,
+    "map50_95": 0.4607132822
+  },
+  "training": {
+    "run": "training/runs/detect/dataset_70816_stretched_yolo26n_416_recall",
+    "best_weights": "training/runs/detect/dataset_70816_stretched_yolo26n_416_recall/weights/best.pt",
+    "best_weights_sha256": "3f1d54d22a640a441566c17e2f0bdacb5f8919517abbe9eb593bc2d12aba7188",
+    "completed_epochs": 11,
+    "optimizer": "AdamW",
+    "lr0": 0.00005,
+    "imgsz": 416,
+    "batch": 16
+  },
+  "onnx_test": {
+    "confidence": 0.20,
+    "true_positives": 56,
+    "false_positives": 5,
+    "false_negatives": 0,
+    "recall": 1.0,
+    "precision": 0.9180327869
+  },
+  "artifacts": {
+    "onnx": "models/steel_ball_dataset_70816_yolo26n_416_stretched_recall.onnx",
+    "onnx_sha256": "9bb3100c3544884fd08b6b6d1ab5a4747d2cb0ada885d0c17a7f93b105de74da",
+    "kmodel": "models/steel_ball_dataset_70816_yolo26n_416_stretched_recall_i16w8.kmodel",
+    "kmodel_sha256": "8fcf76d6de96ea06775ae40adf9b8cce4aa867287b23366c0cd0b40fc83ca55d",
+    "kmodel_bytes": 3256024,
+    "input": "uint8 [1,3,416,416]",
+    "output": "float32 [1,300,6]",
+    "quantization": "int16 activations, uint8 weights",
+    "calibration_samples": 98,
+    "calibration_test_images_included": false
+  },
+  "kmodel_test": {
+    "confidence": 0.20,
+    "true_positives": 56,
+    "false_positives": 5,
+    "false_negatives": 0,
+    "recall": 1.0,
+    "precision": 0.9180327869,
+    "report": "docs/dataset_70816_stretched_kmodel_conf020.json"
+  },
+  "deployment": {
+    "script": "canmv/steel_ball_dataset_70816_yolo26_uart.py",
+    "kmodel_on_sdcard": "/sdcard/models/steel_ball_dataset_70816_yolo26n_416_stretched_recall_i16w8.kmodel",
+    "confidence_threshold": 0.20,
+    "display_confidence_threshold": 0.20,
+    "confirm_hits": 2,
+    "minimum_box_side": 8,
+    "kalman": {
+      "enabled": true,
+      "state": "constant velocity [position, velocity] per image axis",
+      "coast_max": 4,
+      "max_extra_match_distance": 48,
+      "confidence_decay": 0.85,
+      "shared_runtime_script": "canmv/steel_ball_yolo26_uart_epoch19.py"
+    }
+  }
+}

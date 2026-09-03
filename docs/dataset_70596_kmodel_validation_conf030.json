@@ -1,0 +1,309 @@
+{
+  "onnx": "models/steel_ball_dataset_70596_yolo26n_416.onnx",
+  "kmodel": "models/steel_ball_dataset_70596_yolo26n_416_i16w8.kmodel",
+  "input_shape": [
+    1,
+    3,
+    416,
+    416
+  ],
+  "output_shape": [
+    1,
+    300,
+    6
+  ],
+  "confidence": 0.3,
+  "minimum_iou": 0.5,
+  "ground_truth_iou": 0.5,
+  "passed": true,
+  "tensor_comparison_passed": false,
+  "ground_truth_totals": {
+    "onnx": {
+      "true_positives": 10,
+      "false_positives": 2,
+      "false_negatives": 0
+    },
+    "kmodel": {
+      "true_positives": 10,
+      "false_positives": 1,
+      "false_negatives": 0
+    }
+  },
+  "results": [
+    {
+      "image": "39327572.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9817704853988771,
+          "score_error": 0.0030100345611572266,
+          "max_coordinate_error": 0.284423828125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "39327577.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9815151114564072,
+          "score_error": 0.013617396354675293,
+          "max_coordinate_error": 0.13189697265625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "39327584.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9784552897780636,
+          "score_error": 0.013615250587463379,
+          "max_coordinate_error": 0.206451416015625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "39327597.jpg",
+      "onnx_detections": 2,
+      "kmodel_detections": 2,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9828561914320891,
+          "score_error": 0.014641523361206055,
+          "max_coordinate_error": 0.2809906005859375
+        },
+        {
+          "iou": 0.9581280963092014,
+          "score_error": 0.030402064323425293,
+          "max_coordinate_error": 0.221038818359375
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "39327623.jpg",
+      "onnx_detections": 2,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 1,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": false,
+      "matches": [
+        {
+          "iou": 0.9408192710185359,
+          "score_error": 0.0017486810684204102,
+          "max_coordinate_error": 1.12774658203125
+        }
+      ],
+      "unmatched_reference": 1,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "39327625.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9902966416894651,
+          "score_error": 0.0114898681640625,
+          "max_coordinate_error": 0.1134490966796875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "39327630.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.969198680892431,
+          "score_error": 0.00909876823425293,
+          "max_coordinate_error": 0.34686279296875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "39327636.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9600894199900815,
+          "score_error": 0.023120582103729248,
+          "max_coordinate_error": 0.549224853515625
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "39327646.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9796527537939831,
+          "score_error": 0.017932534217834473,
+          "max_coordinate_error": 0.2231903076171875
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    },
+    {
+      "image": "39327667.jpg",
+      "onnx_detections": 1,
+      "kmodel_detections": 1,
+      "ground_truth": {
+        "onnx": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        },
+        "kmodel": {
+          "true_positives": 1,
+          "false_positives": 0,
+          "false_negatives": 0
+        }
+      },
+      "passed": true,
+      "matches": [
+        {
+          "iou": 0.9512581323070362,
+          "score_error": 0.0019922256469726562,
+          "max_coordinate_error": 0.5397491455078125
+        }
+      ],
+      "unmatched_reference": 0,
+      "unmatched_candidate": 0
+    }
+  ]
+}

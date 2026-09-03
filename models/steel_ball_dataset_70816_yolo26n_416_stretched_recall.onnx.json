@@ -1,0 +1,36 @@
+{
+  "weights": "/mnt/c/Users/31806/OneDrive/Desktop/k230\u94a2\u73e0/k230-steel-ball-detector-main/training/runs/detect/dataset_70816_stretched_yolo26n_416_recall/weights/best.pt",
+  "onnx": "/mnt/c/Users/31806/OneDrive/Desktop/k230\u94a2\u73e0/k230-steel-ball-detector-main/models/steel_ball_dataset_70816_yolo26n_416_stretched_recall.onnx",
+  "input_size": [
+    416,
+    416
+  ],
+  "raw_uint8_input": false,
+  "opsets": [
+    {
+      "domain": "",
+      "version": 13
+    }
+  ],
+  "inputs": [
+    {
+      "name": "images",
+      "shape": [
+        1,
+        3,
+        416,
+        416
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output0",
+      "shape": [
+        1,
+        300,
+        6
+      ]
+    }
+  ]
+}
